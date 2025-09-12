@@ -3,9 +3,9 @@ section .data
     hello_len equ $ - hello      ; Length of the string
 
 section .text
-    global _start
+    global _main
 
-_start:
+_main:
     ; write(1, hello, hello_len)
     mov rax, 1              ; syscall number for write
     mov rdi, 1              ; file descriptor 1 (stdout)
