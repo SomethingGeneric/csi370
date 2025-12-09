@@ -1,3 +1,5 @@
+// Matt C CSI 370 Final Project
+
 // Pin definitions
 #define PWMA 10
 #define AIN1 6
