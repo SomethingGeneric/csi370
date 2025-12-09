@@ -28,6 +28,14 @@ int main() {
         write(fd, message.c_str(), message.length());
         
         std::cout << "Sent: " << message;
+        if (temp > 75.0) {
+            std::cout << "Expect window to open, it's hot.";
+        } else if (temp < 60.0) {
+            std::cout << "Expect window to close, it's cold.";
+        } else {
+            std::cout << "No action; comfortable temperature.";
+        }
+        std::cout << "\n";
     }
     
     close(fd);
